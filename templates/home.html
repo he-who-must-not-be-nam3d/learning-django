@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Django Project One</title>
-</head>
-<body>
-<h2>Home</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquam delectus ducimus ea eaque, et
-    explicabo facilis inventore ipsam itaque iusto libero nemo possimus quas quisquam ratione vero vitae?</p>
-</body>
-</html>
+{% extends 'master.html' %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+    <h2 class="text-center text-danger">Welcome to Learning Django</h2>
+<p>You have just learnt blocks and templates</p>
+{% endblock %}

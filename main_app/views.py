@@ -8,4 +8,11 @@ def about(request):
     return render(request, 'about.html')
 
 def services(request):
-    return render(request, 'services.html')
+    our_services = ['Software Development', 'Website Development', 'Penetration Testing']
+    price = 10000
+    date = '05-11-2024'
+    return render(request, 'services.html', {"services": our_services, "price":price, 'date': date})
+
+
+def contacts(request):
+    return render(request, 'contacts.html')
